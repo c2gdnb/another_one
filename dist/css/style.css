@@ -1,0 +1,294 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #444444;
+  font-family: Arial;
+  font-size: 14px; }
+
+.main-layout {
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 50px; }
+  @media (max-width: 480px) {
+    .main-layout {
+      padding: 30px 15px;
+      line-height: 1.4; } }
+
+.main-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px; }
+  @media (max-width: 480px) {
+    .main-title {
+      font-size: 20px;
+      margin-bottom: 20px; } }
+
+.form-wrap {
+  display: flex; }
+  .form-wrap .left-side {
+    margin-right: 30px; }
+    @media (max-width: 768px) {
+      .form-wrap .left-side {
+        margin-right: 0; } }
+  .form-wrap .right-side {
+    flex-basis: 40.715%;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    background-color: #f7f7f7;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+    .form-wrap .right-side .paypal-choose-title {
+      font-size: 18px;
+      color: #444444;
+      margin-bottom: 30px; }
+    .form-wrap .right-side .paypal-choose-link {
+      display: block;
+      width: 137px;
+      height: 52px;
+      border-radius: 4px;
+      margin: 0 auto;
+      background: url("../img/paypal.jpg"); }
+    @media (max-width: 768px) {
+      .form-wrap .right-side {
+        display: none; } }
+  @media (max-width: 768px) {
+    .form-wrap {
+      justify-content: center; } }
+  @media (max-width: 480px) {
+    .form-wrap {
+      display: block; } }
+
+.main-form-row {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center; }
+  .main-form-row .main-form-label-wrap {
+    margin-right: 14px;
+    flex-basis: 119px;
+    flex-shrink: 0;
+    text-align: right; }
+    @media (max-width: 480px) {
+      .main-form-row .main-form-label-wrap {
+        text-align: left;
+        margin: 0 0 6px 0; } }
+  .main-form-row .main-form-column {
+    flex: 1;
+    display: flex;
+    margin-right: 14px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+    .main-form-row .main-form-column:last-child {
+      margin-right: 0; }
+    .main-form-row .main-form-column.main-form-column-half .main-form-select {
+      margin-right: 20px; }
+      .main-form-row .main-form-column.main-form-column-half .main-form-select:last-child {
+        margin-right: 0; }
+    @media (max-width: 480px) {
+      .main-form-row .main-form-column {
+        margin-right: 0; } }
+    .main-form-row .main-form-column .main-form-column-input {
+      position: relative;
+      margin-right: 14px; }
+      .main-form-row .main-form-column .main-form-column-input:last-child {
+        margin-right: 0; }
+  .main-form-row.main-form-row-advanced .main-form-column-advanced {
+    display: flex;
+    align-items: center; }
+    .main-form-row.main-form-row-advanced .main-form-column-advanced:first-child {
+      flex: 1 1 auto;
+      margin-right: 15px; }
+    .main-form-row.main-form-row-advanced .main-form-column-advanced:nth-child(2) {
+      flex: 0 0 auto; }
+      @media (max-width: 480px) {
+        .main-form-row.main-form-row-advanced .main-form-column-advanced:nth-child(2) label {
+          margin: 0 0 6px 0;
+          display: block; } }
+      .main-form-row.main-form-row-advanced .main-form-column-advanced:nth-child(2) .main-form-input {
+        width: 82px;
+        margin-right: 0; }
+        @media (max-width: 480px) {
+          .main-form-row.main-form-row-advanced .main-form-column-advanced:nth-child(2) .main-form-input {
+            display: block; } }
+    @media (max-width: 480px) {
+      .main-form-row.main-form-row-advanced .main-form-column-advanced {
+        display: block; } }
+  @media (max-width: 480px) {
+    .main-form-row.main-form-row-advanced {
+      display: flex; } }
+  @media (max-width: 480px) {
+    .main-form-row {
+      display: block; } }
+
+.main-form label {
+  font-weight: 700;
+  white-space: nowrap; }
+  .main-form label.label-cvv {
+    margin-right: 14px; }
+
+.main-form .main-form-input,
+.main-form .main-form-select {
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 8px 10px;
+  width: 100%;
+  max-height: 32px;
+  color: #888888;
+  margin-right: 10px; }
+  .main-form .main-form-input:last-child,
+  .main-form .main-form-select:last-child {
+    margin-right: 0; }
+
+.main-form .main-form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 64px;
+  background: #fff url(../img/select-icon.png) no-repeat 90% 50%; }
+
+.main-form .main-form-submit {
+  padding-left: 127px; }
+  .main-form .main-form-submit button {
+    border: 1px solid #fd7722;
+    background-color: #ff9000;
+    color: #ffffff;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 20px;
+    -webkit-appearance: button;
+    font-size: 14px;
+    border-radius: 3px; }
+  @media (max-width: 480px) {
+    .main-form .main-form-submit {
+      padding-left: 0; } }
+
+.main-form .main-form-img-inside img {
+  margin-right: 4px; }
+  .main-form .main-form-img-inside img:last-child {
+    margin-right: 0; }
+
+@media (max-width: 480px) {
+  .main-form .main-form-img-inside {
+    display: none; } }
+
+.main-form-cvv-field {
+  position: relative; }
+  .main-form-cvv-field .main-form-cvv-field-quote {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .main-form-cvv-field .main-form-cvv-field-quote i {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url(../img/q-icon.png) no-repeat; }
+    .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden {
+      position: absolute;
+      width: 287px;
+      height: 182px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border: 1px solid #cccccc;
+      background-color: #ffffff;
+      padding: 20px;
+      right: -17px;
+      bottom: 28px;
+      display: flex;
+      color: #444444;
+      justify-content: space-between;
+      display: none; }
+      .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden .cvv-explain-block {
+        font-size: 12px;
+        line-height: 1.4; }
+        .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden .cvv-explain-block img {
+          border-radius: 3px;
+          display: block;
+          margin-bottom: 17px; }
+        .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden .cvv-explain-block .cvv-explain-block-title {
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 4px; }
+        .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden .cvv-explain-block:first-child .cvv-explain-block-text {
+          display: inline-block; }
+      .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden:before {
+        position: absolute;
+        display: block;
+        content: '';
+        background: url(../img/corner.png) no-repeat;
+        width: 19px;
+        height: 12px;
+        right: 12px;
+        bottom: -11px; }
+      .main-form-cvv-field .main-form-cvv-field-quote .main-form-cvv-field-hidden.active {
+        display: flex; }
+
+.js-validate-error-label {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ef5350;
+  background-color: #ffebee;
+  position: absolute;
+  border-radius: 4px;
+  padding: 10px;
+  margin: auto;
+  bottom: 39px;
+  left: 0;
+  right: 0;
+  color: #ef5350;
+  text-align: center;
+  font-weight: 700; }
+  .js-validate-error-label:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(../img/error-corner.png) no-repeat;
+    width: 15px;
+    height: 12px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: -11px; }
+
+.paypal-choose-mobile {
+  display: none;
+  margin-left: 127px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  background-color: #f7f7f7;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  .paypal-choose-mobile .paypal-choose-title {
+    font-size: 16px;
+    color: #444444; }
+  .paypal-choose-mobile .paypal-choose-link {
+    display: block;
+    width: 100px;
+    height: 38px;
+    border-radius: 4px;
+    background: url("../img/paypal.jpg");
+    background-size: 100%; }
+  @media (max-width: 768px) {
+    .paypal-choose-mobile {
+      display: flex;
+      align-items: center; } }
+  @media (max-width: 480px) {
+    .paypal-choose-mobile {
+      margin-left: 0; } }
+
+.card-images-mobile {
+  display: none;
+  margin-bottom: 20px; }
+  .card-images-mobile img {
+    margin-right: 20px; }
+    .card-images-mobile img:last-child {
+      margin-right: 0; }
+  @media (max-width: 480px) {
+    .card-images-mobile {
+      display: block;
+      text-align: center; } }

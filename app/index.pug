@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="css/styles.min.css")
+    title Test Swivl
+
+  body
+    header.page-header
+      .page-header__inner
+        .page-header__row
+          .logo
+            a(href="/" title="← Back to the homepage")
+              img(src="./img/logo.svg" alt="Synth")
+
+          .user-panel
+            .user-info
+              .user-info__name
+                | Arthur Wood
+
+              .user-info__photo
+                picture
+                  source(type="image/webp" srcset="./img/avatar.webp 1x, ./img/avatar@2x.webp 2x")
+                  img(src="./img/avatar.png" srcset="./img/avatar@2x.png 2x" alt="Arthur Wood photo")
+
+              a(href="#").dropdown-toggle
+
+            .user-action
+              a(href="#").user-action__item.user-action__item--notifications
+              a(href="#").user-action__item.user-action__item--share
+              a(href="#").user-action__item.user-action__item--medium
+
+        .header-action-row
+          nav.main-nav
+            ul.main-nav__list
+              li.main-nav__item
+                a.main-nav__link.active(href="#")
+                  | FEED
+
+              li.main-nav__item
+                a.main-nav__link(href="#")
+                  | EXPLORE
+
+              li.main-nav__item
+                a.main-nav__link(href="#")
+                  | DISCUSSIONS
+
+          button.action-button
+
+  main.main
+    .main__inner
+      aside.sidebar
+        .profile
+          .profile__photo
+            picture
+              source(type="image/webp" srcset="./img/Benjamin.webp 1x, ./img/Benjamin@2x.webp 2x")
+              img(src="./img/Benjamin.png" srcset="./img/Benjamin@2x.png 2x" alt="Benjamin Clementine")
+
+          .profile__details 
+            .profile__name Benjamin Clementine
+            .profile__tag @benclementine
+            .profile__action 
+              span.edit-icon 
+              a(href="") Edit Profile
+
+          a(href="#").profile-dropdown-button
+          
+          .profile-dropdown
+            a(href="#").profile-dropdown__item
+              span.profile-dropdown__icon.profile-dropdown__icon--report
+              | Report User
+            a(href="#").profile-dropdown__item
+              span.profile-dropdown__icon.profile-dropdown__icon--block
+              | Block User
+
+        .stat
+          .stat__item
+            span 45
+            | synths
+          .stat__item
+            span 110
+            | followers
+          .stat__item
+            span 322
+            | following
+
+        p.about
+          | Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+
+      .content
+        .mode-switcher
+          a(href="#").mode-switcher__control.js-public
+            | Public
+
+          .mode-switcher__toggler.is-private
+
+          a(href="#").mode-switcher__control.js-private
+            | Private
+
+        .cards
+          .card
+            .card__inner
+              .card__header
+
+              .card__body
+                h2.card__title
+                  | New air routes that promise cheap flights in
+
+              .card__footer
+                .author
+                  .author__avatar
+                  a(href="#").author__name Gregory Watkins
+
+                a(href="").share-link Share
+
+          .card
+            .card__inner
+              .card__header
+
+              .card__body
+                h2.card__title
+                  | New air routes that promise cheap flights in
+
+              .card__footer
+                .author
+                  .author__avatar
+                  a(href="#").author__name Gregory Watkins
+
+                a(href="").share-link Share
+
+          .card
+            .card__inner
+              .card__header
+                .share-status
+                  .share-status__label Shared to
+                  .share-status__text-field #discussionaboutanimgttdds…
+
+              .card__body
+                h2.card__title
+                  | New air routes that promise cheap flights in
+
+              .card__footer
+                .author
+                  .author__avatar
+                  a(href="#").author__name Gregory Watkins
+
+                .meta-info
+                  .meta-info__item
+                    .meta-info__icon.meta-info__icon--view
+
+                    | 88
+
+                  .meta-info__item
+                    .meta-info__icon.meta-info__icon--like
+
+                    | 24
+
+          .card
+            .card__inner
+              .card__header
+                .share-status
+                  a(href="#" title="Click to copy").share-status__link
+                  .share-status__label Shared via weblink
+
+              .card__body
+                h2.card__title
+                  | New air routes that promise cheap flights in
+
+              .card__footer
+                .author
+                  .author__avatar
+                  a(href="#").author__name Gregory Watkins
+
+                .meta-info
+                  .meta-info__item
+                    .meta-info__icon.meta-info__icon--view
+
+                    | 88
+
+                  .meta-info__item
+                    .meta-info__icon.meta-info__icon--like
+
+                    | 24
+
+    script(src="js/scripts.min.js")

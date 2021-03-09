@@ -1,0 +1,17 @@
+@mixin container() {
+  margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1202px;
+}
+
+
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin square($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
